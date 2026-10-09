@@ -1,0 +1,23 @@
+class Demo implements Runnable
+{
+    public void run()
+    {
+        System.out.println("Thread is running ..");
+    }
+}
+
+class ThreadDemo3
+{
+    public  static  void main(String []A)
+    {
+
+        Thread dobj1=new Thread(new Demo());
+        Thread dobj2=new Thread(new Demo());
+
+        dobj1.start();
+        dobj2.start();
+
+        
+
+    }
+}
